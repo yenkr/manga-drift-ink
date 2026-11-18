@@ -1,112 +1,204 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f5f1e8">
-  <meta name="description" content="Manga Drift — a high-speed manga-inspired drifting adventure.">
-  <title>Manga Drift — Make every turn a story</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manga Drift — Ink-Style Drift Racing for Android</title>
+  <meta name="description" content="Manga Drift is a high-speed, manga-style pseudo-3D drift racing game for Android. Drift, speed and no-brake challenges, weekly leaderboards, and tracks built from the streets of your own city.">
+  <meta property="og:title" content="Manga Drift">
+  <meta property="og:description" content="Ink-style drift racing. Slide through 24 levels, climb the weekly leaderboards and race the streets of your own city.">
+  <meta property="og:image" content="img/hero.jpg">
+  <meta name="theme-color" content="#0b0b0b">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="wordmark" href="index.html" aria-label="Manga Drift home">MANGA<span>DRIFT</span><i>!</i></a>
-    <nav class="site-nav" aria-label="Main navigation">
-      <a href="#story">The story</a>
-      <a href="#features">The rush</a>
-      <a href="contact.html">Contact</a>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="img/icon.png" alt=""><span>MANGA <em>DRIFT</em></span></a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
+    <ul>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#modes">Modes</a></li>
+      <li><a href="#controls">Controls</a></li>
+      <li><a href="#unlock">Free &amp; Full</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="tag">Android · Free to play</span>
+      <h1>MANGA<br>DRIFT</h1>
+      <p class="lead">A high-speed drift racer drawn in ink. Throw the car sideways, chain long slides
+        through pillar forests and hairpins, and turn the streets of your own city into a race track.</p>
+      <div class="actions">
+        <a class="btn btn-red" href="https://play.google.com/store/apps/details?id=com.manva.mangadrift" target="_blank" rel="noopener"><span>▶ GET IT ON GOOGLE PLAY</span></a>
+        <a class="btn btn-white" href="#features"><span>SEE FEATURES</span></a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="burst">FULL<br>SEND!</div>
+      <img src="img/hero.jpg" alt="Manga-style drawing of a sports car drifting through a city at night" width="900" height="900">
+    </div>
+  </div>
+</section>
+
+<div class="strip" aria-hidden="true">
+  <div class="strip-inner">
+    <span>DRIFT ✦</span><span>SPEED ✦</span><span>NO BRAKE ✦</span><span>MY CITY ✦</span><span>WEEKLY RANKINGS ✦</span><span>INK STYLE ✦</span>
+    <span>DRIFT ✦</span><span>SPEED ✦</span><span>NO BRAKE ✦</span><span>MY CITY ✦</span><span>WEEKLY RANKINGS ✦</span><span>INK STYLE ✦</span>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<section id="features" class="halftone">
+  <div class="wrap">
+    <h2 class="section-title reveal">BUILT FOR <span class="hl">SIDEWAYS</span></h2>
+    <p class="section-sub reveal">Every frame is drawn live by a custom 3D renderer made just for this game, in a bold black-and-white manga style.</p>
+    <div class="panels">
+      <article class="panel reveal">
+        <span class="num">01</span>
+        <div class="icon">✒️</div>
+        <h3>Living Ink Art</h3>
+        <p>Thick outlines, halftone shading and speed lines. Switch colour palettes and the whole game, menus included, re-inks itself.</p>
+      </article>
+      <article class="panel reveal">
+        <span class="num">02</span>
+        <div class="icon">⚙️</div>
+        <h3>Real Drift Physics</h3>
+        <p>Physics runs at a fixed 120 steps a second, so every slide is predictable and every run plays out the same way given the same inputs.</p>
+      </article>
+      <article class="panel reveal">
+        <span class="num">03</span>
+        <div class="icon">🏆</div>
+        <h3>Weekly Rankings</h3>
+        <p>A fresh leaderboard for every level, every week, on Google Play Games. Beat the CPU rivals and push them off the board.</p>
+      </article>
+      <article class="panel wide reveal">
+        <span class="num">04</span>
+        <div class="icon">🗺️</div>
+        <h3>My City: Race Your Streets</h3>
+        <p>Type the name of any place, or use your location, and Manga Drift turns the real roads around it into a closed racing loop,
+          with walls and hurdles. The track is saved on your phone, so you can race it offline afterwards. Map data © OpenStreetMap contributors.</p>
+      </article>
+      <article class="panel reveal">
+        <span class="num">05</span>
+        <div class="icon">🔊</div>
+        <h3>Feel the Engine</h3>
+        <p>Engine sound that follows the revs, tyre squeal, wind, and haptic feedback on every bump and wall hit.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- MODES -->
+<section id="modes" class="modes-sec">
+  <div class="wrap">
+    <h2 class="section-title reveal">CHOOSE YOUR <span class="hl">CHALLENGE</span></h2>
+    <p class="section-sub reveal">Three arena modes with four levels each, plus road tracks with three challenges per track.</p>
+    <div class="modes">
+      <div class="mode reveal">
+        <div class="lv">Levels 1–4</div>
+        <h3>DRIFT</h3>
+        <p>From an empty lot to a full forest maze. Hold long, clean angles to score.</p>
+      </div>
+      <div class="mode reveal">
+        <div class="lv">Levels 5–8</div>
+        <h3>SPEED</h3>
+        <p>Straight lines, fast lanes, the redline and an obstacle rush. Pure throttle, no hesitation.</p>
+      </div>
+      <div class="mode reveal">
+        <div class="lv">Levels 9–12</div>
+        <h3>NO BRAKE</h3>
+        <p>The brake pedal is gone. Steer, slide and survive the Gauntlet on momentum alone.</p>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat reveal"><b data-count="24">0</b><span>Levels</span></div>
+      <div class="stat reveal"><b data-count="3">0</b><span>Arena modes</span></div>
+      <div class="stat reveal"><b data-count="120">0</b><span>Physics Hz</span></div>
+      <div class="stat reveal"><b>∞</b><span>City tracks</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTROLS -->
+<section id="controls">
+  <div class="wrap controls">
+    <div>
+      <h2 class="section-title reveal">DRIVE IT <span class="hl">YOUR WAY</span></h2>
+      <p class="section-sub reveal">Pick the control style that suits your thumbs. You can change it any time in settings.</p>
+      <ul class="ctrl-list">
+        <li class="reveal"><span class="k">📱</span><div><b>Tilt + Pedals</b>Tilt the phone to steer, with on-screen GAS, BRAKE and HANDBRAKE buttons.</div></li>
+        <li class="reveal"><span class="k">👉</span><div><b>Tap Gas Right</b>Tilt to steer. Right half of the screen is gas, left half is brake.</div></li>
+        <li class="reveal"><span class="k">👈</span><div><b>Tap Gas Left</b>The same layout, mirrored for left-handed players.</div></li>
+      </ul>
+    </div>
+    <div class="phone reveal" aria-hidden="true"><div class="screen"><canvas id="road"></canvas></div></div>
+  </div>
+</section>
+
+<!-- FREE vs FULL -->
+<section id="unlock" class="halftone">
+  <div class="wrap">
+    <h2 class="section-title reveal">FREE TO START, <span class="hl">YOURS TO KEEP</span></h2>
+    <p class="section-sub reveal">No subscriptions and no energy timers.</p>
+    <div class="price-grid">
+      <div class="price reveal">
+        <h3>FREE</h3>
+        <div class="cost">Download and play</div>
+        <ul>
+          <li>The first two levels of every mode</li>
+          <li>The Oval road track</li>
+          <li>Open any locked level for good by watching 3 short optional video ads</li>
+          <li>My City tracks and weekly rankings</li>
+        </ul>
+      </div>
+      <div class="price pro reveal">
+        <h3>FULL GAME</h3>
+        <div class="cost">One-time purchase</div>
+        <ul>
+          <li>Every level and every road track</li>
+          <li>Every car</li>
+          <li>Pay once, keep it forever</li>
+          <li>Restore it on a new phone with the same Google account</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="wrap">
+    <h2 class="reveal">THE ROAD IS INKED. GO.</h2>
+    <p class="reveal">Manga Drift is available for Android on Google Play.</p>
+    <a class="btn btn-white reveal" href="https://play.google.com/store/apps/details?id=com.manva.mangadrift" target="_blank" rel="noopener"><span>▶ DOWNLOAD NOW</span></a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="img/icon.png" alt=""><span style="color:#fff">MANGA <em>DRIFT</em></span></a>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="mailto:contact@example.com">Contact</a>
     </nav>
-    <a class="header-cta" href="#story">Enter the story <span aria-hidden="true">↗</span></a>
-  </header>
+    <div class="small">© <span class="year">2026</span> Manga Drift. All rights reserved. Map data © OpenStreetMap contributors. Google Play and the Google Play logo are trademarks of Google LLC.</div>
+  </div>
+</footer>
 
-  <main>
-    <section class="hero halftone" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="eyebrow-star" aria-hidden="true">✦</span> A new kind of joyride</p>
-        <h1 id="hero-title">MAKE EVERY<br>TURN A <span>STORY.</span></h1>
-        <p class="hero-description">The city is your canvas. The road is your rival. Hit the gas and write your own manga-worthy legend.</p>
-        <a class="button button-dark" href="#story">Discover the world <span aria-hidden="true">→</span></a>
-        <p class="hero-note">YOUR NEXT CHAPTER STARTS HERE <span aria-hidden="true">✳</span></p>
-      </div>
-      <div class="hero-art" role="img" aria-label="Illustrated sports car drifting through a burst of manga speed lines">
-        <div class="art-sun"></div>
-        <div class="speed-line speed-line-one"></div>
-        <div class="speed-line speed-line-two"></div>
-        <div class="art-stamp">FULL<br>THROTTLE!</div>
-        <div class="road"></div>
-        <div class="car">
-          <div class="car-wing"></div>
-          <div class="car-body"></div>
-          <div class="car-window"></div>
-          <div class="car-wheel car-wheel-front"></div>
-          <div class="car-wheel car-wheel-back"></div>
-          <div class="car-light"></div>
-        </div>
-        <div class="art-caption">vroom<br><span>vroom</span></div>
-        <span class="art-number">#01</span>
-      </div>
-      <div class="hero-side-note">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></div>
-    </section>
-
-    <section class="ticker" aria-label="Game tagline">
-      <div class="ticker-track">
-        <span>NO BRAKES</span><b aria-hidden="true">✳</b><span>JUST PANELS</span><b aria-hidden="true">✳</b><span>ALL GAS</span><b aria-hidden="true">✳</b><span>NO BRAKES</span><b aria-hidden="true">✳</b><span>JUST PANELS</span><b aria-hidden="true">✳</b><span>ALL GAS</span><b aria-hidden="true">✳</b>
-      </div>
-    </section>
-
-    <section class="story section-wrap" id="story">
-      <div class="section-label"><span>01</span> / THE STORY</div>
-      <div class="story-grid">
-        <div class="story-heading">
-          <p class="eyebrow">THE STREETS ARE CALLING</p>
-          <h2>ONE CITY.<br><span>ENDLESS</span><br>POSSIBILITIES.</h2>
-        </div>
-        <div class="story-copy">
-          <p class="drop-cap">Every corner has a story. Every rival has a reason. In Manga Drift, the city opens up one thrilling turn at a time—draw your own line, find your rhythm, and make the streets remember your name.</p>
-          <p>Inspired by the energy of manga and the feeling of a perfect drift, Manga Drift brings bold characters, expressive style, and high-speed moments together in one illustrated world.</p>
-          <a class="text-link" href="contact.html">Keep in touch <span aria-hidden="true">↗</span></a>
-        </div>
-      </div>
-      <div class="panel-row" id="features">
-        <article class="comic-panel panel-red">
-          <span class="panel-index">PANEL 01</span>
-          <span class="panel-icon" aria-hidden="true">↗</span>
-          <h3>FIND YOUR<br>LINE.</h3>
-          <p>Own the corners. Make every move count.</p>
-          <span class="panel-sound" aria-hidden="true">SKRRRT!</span>
-        </article>
-        <article class="comic-panel panel-cream">
-          <span class="panel-index">PANEL 02</span>
-          <span class="panel-icon" aria-hidden="true">✳</span>
-          <h3>FEEL THE<br>FLOW.</h3>
-          <p>Let the city become part of your story.</p>
-          <span class="panel-sound panel-sound-dark" aria-hidden="true">WHOOSH!</span>
-        </article>
-        <article class="comic-panel panel-ink">
-          <span class="panel-index">PANEL 03</span>
-          <span class="panel-icon" aria-hidden="true">✦</span>
-          <h3>MAKE IT<br>YOURS.</h3>
-          <p>Bring your own style to every chapter.</p>
-          <span class="panel-sound" aria-hidden="true">NEXT!</span>
-        </article>
-      </div>
-    </section>
-
-    <section class="closing-banner halftone">
-      <p class="eyebrow">READY WHEN YOU ARE</p>
-      <h2>THE ROAD IS<br><span>YOUR PANEL.</span></h2>
-      <a class="button button-light" href="contact.html">Say hello <span aria-hidden="true">→</span></a>
-      <span class="closing-spark" aria-hidden="true">✳</span>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <a class="wordmark footer-mark" href="index.html">MANGA<span>DRIFT</span><i>!</i></a>
-    <p>© 2026 Manga Drift. All rights reserved.</p>
-    <nav aria-label="Footer navigation">
-      <a href="privacy.html">Privacy policy</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </footer>
+<button id="top-btn" aria-label="Back to top">↑</button>
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,57 +1,166 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f5f1e8">
-  <meta name="description" content="Learn how Manga Drift handles information shared through this website.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy — Manga Drift</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Privacy Policy for the Manga Drift Android game.">
+  <meta name="theme-color" content="#0b0b0b">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="wordmark" href="index.html" aria-label="Manga Drift home">MANGA<span>DRIFT</span><i>!</i></a>
-    <nav class="site-nav" aria-label="Main navigation">
-      <a href="index.html#story">The story</a>
-      <a href="index.html#features">The rush</a>
-      <a href="contact.html">Contact</a>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="img/icon.png" alt=""><span>MANGA <em>DRIFT</em></span></a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="privacy.html" class="active">Privacy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+    </ul>
+  </div>
+</header>
+
+<div class="legal-hero">
+  <div class="wrap">
+    <h1>PRIVACY POLICY</h1>
+    <p>Last updated: 13 November 2026</p>
+  </div>
+</div>
+
+<main class="legal halftone">
+  <div class="wrap">
+    <div class="doc">
+      <nav class="toc" aria-label="Contents">
+        <a href="#summary">Summary</a>
+        <a href="#collect">What we collect</a>
+        <a href="#third">Third parties</a>
+        <a href="#permissions">Permissions</a>
+        <a href="#children">Children</a>
+        <a href="#rights">Your choices</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <p>This Privacy Policy explains how the Manga Drift mobile game ("Manga Drift", the "App", "we", "us")
+        handles information when you use it. The App's package name on Google Play is <code>com.manva.mangadrift</code>.</p>
+
+      <h2 id="summary">The short version</h2>
+      <ul>
+        <li>We do <strong>not</strong> run our own servers that collect your personal data, and we do not sell personal data.</li>
+        <li>Your progress, settings, purchases record and saved tracks are stored <strong>on your device</strong>.</li>
+        <li>Some features use services from Google and OpenStreetMap. Those services receive the data they need to work, as described below.</li>
+        <li>Location is optional. It is only used when you ask the My City feature to build a track near you.</li>
+      </ul>
+
+      <h2 id="collect">Information the App uses</h2>
+
+      <h3>1. Data stored only on your device</h3>
+      <p>Game progress (stars, unlocked levels, best scores), settings (controls, colour palette, car choice),
+        your driver name, the record of your purchase and rewarded ads watched, cached leaderboards, and the
+        My City tracks you create. This data stays in the App's private storage and is deleted when you uninstall the App.</p>
+
+      <h3>2. Approximate location (optional)</h3>
+      <p>If you choose "use my location" in My City, the App asks for permission to read your <strong>approximate (coarse)
+        location</strong>. The coordinates are sent to OpenStreetMap's Nominatim service to find the name of the place,
+        and the surrounding area is sent to the Overpass service to download nearby streets. We do not store your location
+        on any server of ours, and we do not track your location in the background. You can instead type a place name, in which case
+        the place name you type is sent to Nominatim.</p>
+
+      <h3>3. Google account name (optional, at purchase)</h3>
+      <p>When you buy the Full Game, the App may offer Google Sign-In. If you sign in, the App reads the
+        <strong>display name</strong> on your Google account and turns its first word into a driver name (for example
+        "ALEX4821"). Only this driver name is kept, on your device. Sign-in is optional: if you cancel, the purchase still works.</p>
+
+      <h3>4. Leaderboard scores</h3>
+      <p>When you open the Rankings screen, your best weekly score per level and your player name may be submitted to
+        <strong>Google Play Games Services</strong>, where they are visible to other players on that leaderboard.
+        Nothing is sent before you open the Rankings screen.</p>
+
+      <h3>5. Motion sensors and vibration</h3>
+      <p>Tilt steering reads your phone's accelerometer while you are driving. These readings are used on the device only
+        and are never stored or sent anywhere. Vibration is used for haptic feedback.</p>
+
+      <h2 id="third">Third-party services</h2>
+      <p>These services process data under their own privacy policies:</p>
+      <table>
+        <thead><tr><th>Service</th><th>Used for</th><th>Data it may receive</th></tr></thead>
+        <tbody>
+          <tr><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google AdMob</a></td>
+            <td>Optional rewarded video ads that unlock levels</td>
+            <td>Device and advertising identifiers, IP address, approximate location derived from IP, ad interaction data</td></tr>
+          <tr><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Play Billing</a></td>
+            <td>The one-time Full Game purchase</td>
+            <td>Purchase details. Payment details are handled by Google; we never see your card or payment information.</td></tr>
+          <tr><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Sign-In</a></td>
+            <td>Optional driver name at purchase</td>
+            <td>Your Google account basic profile (name)</td></tr>
+          <tr><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Play Games Services</a></td>
+            <td>Weekly leaderboards</td>
+            <td>Your Play Games player ID, gamer name and scores</td></tr>
+          <tr><td><a href="https://osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener">OpenStreetMap (Nominatim, Overpass)</a></td>
+            <td>Building My City tracks</td>
+            <td>The place name you type, or your approximate coordinates, plus your IP address as part of the request</td></tr>
+        </tbody>
+      </table>
+      <p>For how Google uses data from apps that use its services, see
+        <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from sites or apps that use our services</a>.</p>
+
+      <h2 id="permissions">Android permissions</h2>
+      <ul>
+        <li><strong>Internet</strong>: ads, purchases, leaderboards and downloading map data.</li>
+        <li><strong>Approximate location</strong>: only for "use my location" in My City. You can refuse it and still play everything.</li>
+        <li><strong>Billing</strong>: the Full Game purchase through Google Play.</li>
+        <li><strong>Vibrate</strong>: haptic feedback.</li>
+      </ul>
+
+      <h2 id="children">Children's privacy</h2>
+      <p>Manga Drift is not directed at children under 13, and we do not knowingly collect personal information from them.
+        If you believe a child has provided personal information through the App, contact us and we will help remove it.</p>
+
+      <h2 id="rights">Your choices</h2>
+      <ul>
+        <li><strong>Location</strong>: turn it off any time in Android Settings → Apps → Manga Drift → Permissions.</li>
+        <li><strong>Ads personalisation</strong>: reset or delete your advertising ID in Android Settings → Google → Ads.</li>
+        <li><strong>Local data</strong>: clear the App's storage or uninstall it to delete everything stored on your device.</li>
+        <li><strong>Google data</strong>: manage your Google and Play Games data at <a href="https://myaccount.google.com" target="_blank" rel="noopener">myaccount.google.com</a>.</li>
+        <li>Depending on where you live (for example under the GDPR or CCPA), you may have rights to access, correct or delete your data.
+          Because we do not hold your data on our own servers, most requests are best made directly to the services listed above,
+          but you can always contact us for help.</li>
+      </ul>
+
+      <h2>Security and retention</h2>
+      <p>Data on your device stays there until you delete it. Network requests made by the App use encrypted HTTPS connections.
+        Third-party services keep data according to their own policies.</p>
+
+      <h2>Changes to this policy</h2>
+      <p>We may update this policy when the App changes. The "Last updated" date at the top will show the latest version.
+        Significant changes will also be noted in the App's Google Play release notes.</p>
+
+      <h2 id="contact">Contact</h2>
+      <p>Questions about this policy? Email us at <a href="mailto:contact@example.com">contact@example.com</a>.</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="img/icon.png" alt=""><span style="color:#fff">MANGA <em>DRIFT</em></span></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="mailto:contact@example.com">Contact</a>
     </nav>
-    <a class="header-cta" href="index.html">Back to home <span aria-hidden="true">↗</span></a>
-  </header>
-  <main class="document-main">
-    <article class="document-wrap">
-      <p class="document-kicker">The fine print</p>
-      <h1>PRIVACY<br>POLICY.</h1>
-      <p class="document-intro">Your privacy matters. Here’s what happens to information you share with the Manga Drift website.</p>
-      <div class="document-card">
-        <h2>Information you provide</h2>
-        <p>If you use our contact form, you choose to provide your name, email address, and message. We use that information only to receive and respond to your inquiry.</p>
+    <div class="small">© <span class="year">2026</span> Manga Drift. All rights reserved.</div>
+  </div>
+</footer>
 
-        <h2>Contact form service</h2>
-        <p>The contact form is processed by FormSubmit, a third-party form delivery service. Information you submit is sent through FormSubmit and delivered to the Manga Drift contact inbox. FormSubmit may process or retain information as described in its own privacy policy. Please avoid including sensitive personal information in your message.</p>
-
-        <h2>Website hosting and cookies</h2>
-        <p>This site does not intentionally set advertising or analytics cookies. The website host may process basic technical information, such as request logs, to deliver and protect the site. The host’s own privacy terms apply to that processing.</p>
-
-        <h2>Data retention and your choices</h2>
-        <p>Messages are kept only as long as needed to respond and maintain correspondence. You may ask us to delete a message or its personal information by sending a request through the contact page.</p>
-
-        <h2>Changes to this policy</h2>
-        <p>We may update this policy when the site or its services change. Any revision will be posted on this page.</p>
-
-        <h2>Questions</h2>
-        <p>For privacy questions or requests, please <a href="contact.html">contact us</a>.</p>
-        <p class="policy-updated">Last updated: November 18, 2026</p>
-      </div>
-    </article>
-  </main>
-  <footer class="site-footer">
-    <a class="wordmark footer-mark" href="index.html">MANGA<span>DRIFT</span><i>!</i></a>
-    <p>© 2026 Manga Drift. All rights reserved.</p>
-    <nav aria-label="Footer navigation">
-      <a href="privacy.html">Privacy policy</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </footer>
+<button id="top-btn" aria-label="Back to top">↑</button>
+<script src="script.js"></script>
 </body>
 </html>
