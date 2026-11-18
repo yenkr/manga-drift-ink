@@ -2,11 +2,111 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>NewProject</title>
-  <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta name="theme-color" content="#f5f1e8">
+  <meta name="description" content="Manga Drift — a high-speed manga-inspired drifting adventure.">
+  <title>Manga Drift — Make every turn a story</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <app-root></app-root>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="Manga Drift home">MANGA<span>DRIFT</span><i>!</i></a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#story">The story</a>
+      <a href="#features">The rush</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="header-cta" href="#story">Enter the story <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero halftone" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-star" aria-hidden="true">✦</span> A new kind of joyride</p>
+        <h1 id="hero-title">MAKE EVERY<br>TURN A <span>STORY.</span></h1>
+        <p class="hero-description">The city is your canvas. The road is your rival. Hit the gas and write your own manga-worthy legend.</p>
+        <a class="button button-dark" href="#story">Discover the world <span aria-hidden="true">→</span></a>
+        <p class="hero-note">YOUR NEXT CHAPTER STARTS HERE <span aria-hidden="true">✳</span></p>
+      </div>
+      <div class="hero-art" role="img" aria-label="Illustrated sports car drifting through a burst of manga speed lines">
+        <div class="art-sun"></div>
+        <div class="speed-line speed-line-one"></div>
+        <div class="speed-line speed-line-two"></div>
+        <div class="art-stamp">FULL<br>THROTTLE!</div>
+        <div class="road"></div>
+        <div class="car">
+          <div class="car-wing"></div>
+          <div class="car-body"></div>
+          <div class="car-window"></div>
+          <div class="car-wheel car-wheel-front"></div>
+          <div class="car-wheel car-wheel-back"></div>
+          <div class="car-light"></div>
+        </div>
+        <div class="art-caption">vroom<br><span>vroom</span></div>
+        <span class="art-number">#01</span>
+      </div>
+      <div class="hero-side-note">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></div>
+    </section>
+
+    <section class="ticker" aria-label="Game tagline">
+      <div class="ticker-track">
+        <span>NO BRAKES</span><b aria-hidden="true">✳</b><span>JUST PANELS</span><b aria-hidden="true">✳</b><span>ALL GAS</span><b aria-hidden="true">✳</b><span>NO BRAKES</span><b aria-hidden="true">✳</b><span>JUST PANELS</span><b aria-hidden="true">✳</b><span>ALL GAS</span><b aria-hidden="true">✳</b>
+      </div>
+    </section>
+
+    <section class="story section-wrap" id="story">
+      <div class="section-label"><span>01</span> / THE STORY</div>
+      <div class="story-grid">
+        <div class="story-heading">
+          <p class="eyebrow">THE STREETS ARE CALLING</p>
+          <h2>ONE CITY.<br><span>ENDLESS</span><br>POSSIBILITIES.</h2>
+        </div>
+        <div class="story-copy">
+          <p class="drop-cap">Every corner has a story. Every rival has a reason. In Manga Drift, the city opens up one thrilling turn at a time—draw your own line, find your rhythm, and make the streets remember your name.</p>
+          <p>Inspired by the energy of manga and the feeling of a perfect drift, Manga Drift brings bold characters, expressive style, and high-speed moments together in one illustrated world.</p>
+          <a class="text-link" href="contact.html">Keep in touch <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="panel-row" id="features">
+        <article class="comic-panel panel-red">
+          <span class="panel-index">PANEL 01</span>
+          <span class="panel-icon" aria-hidden="true">↗</span>
+          <h3>FIND YOUR<br>LINE.</h3>
+          <p>Own the corners. Make every move count.</p>
+          <span class="panel-sound" aria-hidden="true">SKRRRT!</span>
+        </article>
+        <article class="comic-panel panel-cream">
+          <span class="panel-index">PANEL 02</span>
+          <span class="panel-icon" aria-hidden="true">✳</span>
+          <h3>FEEL THE<br>FLOW.</h3>
+          <p>Let the city become part of your story.</p>
+          <span class="panel-sound panel-sound-dark" aria-hidden="true">WHOOSH!</span>
+        </article>
+        <article class="comic-panel panel-ink">
+          <span class="panel-index">PANEL 03</span>
+          <span class="panel-icon" aria-hidden="true">✦</span>
+          <h3>MAKE IT<br>YOURS.</h3>
+          <p>Bring your own style to every chapter.</p>
+          <span class="panel-sound" aria-hidden="true">NEXT!</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="closing-banner halftone">
+      <p class="eyebrow">READY WHEN YOU ARE</p>
+      <h2>THE ROAD IS<br><span>YOUR PANEL.</span></h2>
+      <a class="button button-light" href="contact.html">Say hello <span aria-hidden="true">→</span></a>
+      <span class="closing-spark" aria-hidden="true">✳</span>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="wordmark footer-mark" href="index.html">MANGA<span>DRIFT</span><i>!</i></a>
+    <p>© 2026 Manga Drift. All rights reserved.</p>
+    <nav aria-label="Footer navigation">
+      <a href="privacy.html">Privacy policy</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </footer>
 </body>
+</html>
